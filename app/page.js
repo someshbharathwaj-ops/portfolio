@@ -8,6 +8,7 @@ import About from '../components/About';
 import Projects from '../components/Projects';
 import Skills from '../components/Skills';
 import Learning from '../components/Learning';
+import Certificates from '/components/Certificates';
 import Experience from '../components/Experience';
 import Contact from '../components/Contact';
 import Footer from '../components/Footer';
@@ -26,7 +27,7 @@ export default function Portfolio() {
   
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ['home', 'about', 'projects', 'skills', 'learning', 'experience', 'contact'];
+      const sections = ['home', 'about', 'projects', 'skills', 'learning', 'certificates', 'experience', 'contact'];
       const current = sections.find(section => {
         const element = document.getElementById(section);
         if (element) {
@@ -60,11 +61,26 @@ export default function Portfolio() {
           
           <main className="relative">
             <Hero />
+            <div className="h-32"></div> {/* Transparent gap */}
+            
             <About />
+            <div className="h-32"></div> {/* Transparent gap */}
+            
             <Projects />
+            <div className="h-32"></div> {/* Transparent gap */}
+            
             <Skills />
+            <div className="h-32"></div> {/* Transparent gap */}
+            
             <Learning />
+            <div className="h-32"></div> {/* Transparent gap */}
+            
+            <Certificates />
+            <div className="h-32"></div> {/* Transparent gap */}
+            
             <Experience />
+            <div className="h-32"></div> {/* Transparent gap */}
+            
             <Contact />
           </main>
           

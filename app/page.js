@@ -82,9 +82,10 @@ export default function Portfolio() {
             <div className="h-32"></div> {/* Transparent gap */}
             
             <Contact />
+            <div className="h-32"></div> {/* Transparent gap */}
           </main>
           
-          <Footer />
+          
         </>
       )}
     </div>
